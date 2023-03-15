@@ -26,7 +26,7 @@ namespace CAPSTONEJGR.Controllers
             var user = await _context.Users.SingleOrDefaultAsync(x => x.Username == username && x.Password == password);
 
             if(username == null) {
-                return NotFound();
+                return NoContent();
             }
             return user;
             }

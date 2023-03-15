@@ -27,6 +27,17 @@ namespace CAPSTONEJGR.Controllers
             return await _context.Vendors.ToListAsync();
         }
 
+
+       // [HttpGet("po/{vendorId}")]
+        //public async Task<ActionResult<Po>> CreatePo(int vendorId) {
+
+          //  var vendor = await _context.Vendors.FindAsync(vendorId); 
+
+       // }
+
+
+
+
         // GET: api/Vendors/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Vendor>> GetVendor(int id)
