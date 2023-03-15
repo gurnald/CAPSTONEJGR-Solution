@@ -23,6 +23,6 @@ public class Request {
     public int UserId { get; set; }
 
     public virtual User? User { get; set; }
-    public virtual IEnumerable<RequestLine>? RequestLines { get; set; }
+    public virtual IEnumerable<RequestLine>? RequestLine { get; set; }
 
 }

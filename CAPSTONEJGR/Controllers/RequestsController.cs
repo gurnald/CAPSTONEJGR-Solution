@@ -99,7 +99,7 @@ namespace CAPSTONEJGR.Controllers
 
             var request = await _context.Requests
                             .Include(x => x.User)
-                            .Include(x => x.RequestLines)!
+                            .Include(x => x.RequestLine)!
                                 .ThenInclude(x => x.Product)
                                 .SingleOrDefaultAsync(x=> x.Id == id);    
            

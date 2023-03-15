@@ -41,8 +41,6 @@ namespace CAPSTONEJGR.Controllers
             return Ok();
         }
 
-
-
         // GET: api/RequestLines
         [HttpGet]
         public async Task<ActionResult<IEnumerable<RequestLine>>> GetRequestLines()
