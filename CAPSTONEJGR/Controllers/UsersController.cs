@@ -25,8 +25,8 @@ namespace CAPSTONEJGR.Controllers
         public async Task<ActionResult<User>> Login(string username, string password) {
             var user = await _context.Users.SingleOrDefaultAsync(x => x.Username == username && x.Password == password);
 
-            if(username == null) {
-                return NoContent();
+            if(user == null)  {
+                return NotFound();
             }
             return user;
             }
